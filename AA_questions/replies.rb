@@ -1,6 +1,5 @@
 class Replies
 
-  
     def self.find_by_user_id(user_id)
         replies = QuestionsDatabase.instance.execute(<<-SQL, user_id) 
 			SELECT

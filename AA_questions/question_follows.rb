@@ -1,8 +1,6 @@
-
 require_relative "questions.rb"
 require_relative "users.rb"
 require_relative "replies.rb"
-
 
 class QuestionFollows
 
@@ -17,7 +15,6 @@ class QuestionFollows
 		SQL
 		QuestionFollows.new(question_follow.first) 
     end
-
 
     attr_accessor :user_id, :question_id
     def initialize(options)
